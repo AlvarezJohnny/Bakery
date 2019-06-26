@@ -1,0 +1,48 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+.try a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 60px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+nav img {
+  height: 75px;
+  width: 85px;
+}
+
+#monster {
+  display: grid;
+  grid-template: 500px 500px / 500px 500px 500px
+}
+
+#monster img {
+  margin-left: 85px;
+  height: 300px;
+  width: 300px;
+}
+
+#monster h1 {
+  text-align: center;
+}
+
+#monster p {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Let's Get This Bread</title>
+    <% if request.path == "/" %>
+      <link rel="stylesheet" href="main2.css">
+    <% else %>
+      <link rel="stylesheet" href="main.css">
+    <% end %>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/"><img src="https://i.pinimg.com/originals/44/fa/b7/44fab70348c532174bf51070ec9fbd25.jpg"></a></li>
+        <div class="try">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="cookies">Cookies</a></li>
+        <li><a href="muffins">Muffins</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="events">Events</a></li>
+      </div>
+      </ul>
+    </nav>
+
+    <footer></footer>
+    <script src="main.js" charset="utf-8"></script>
+    <%= yield %>
+  </body>
+</html>
