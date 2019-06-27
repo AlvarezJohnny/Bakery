@@ -1,20 +1,29 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #fff8dc
+}
+
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  margin-top: -13px;
 }
 
 li {
   float: left;
+  height: 85px;
 }
 
 .try a {
   display: block;
   color: white;
   text-align: center;
-  padding: 24px 60px;
+  padding: 29px 60px;
   text-decoration: none;
   font-size: 25px;
 }
@@ -24,25 +33,50 @@ li a:hover {
 }
 
 nav img {
-  height: 75px;
-  width: 85px;
+  height: 150px;
+  width: 150px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
 }
 
 #monster {
+  padding-top: 5%;
   display: grid;
-  grid-template: 500px 500px / 500px 500px 500px
+  grid-template: 500px 500px / 500px 500px 500px;
 }
 
 #monster img {
-  margin-left: 85px;
-  height: 300px;
-  width: 300px;
+  margin-left: 20px;
+  height: 275px;
+  width: 275px;
 }
 
-#monster h1 {
-  text-align: center;
+#gurl {
+  padding-top: 5%;
+  display: grid;
+  grid-template: 500px 500px / 500px 500px 500px;
 }
 
-#monster p {
-  text-align: center;
+#gurl img {
+  margin-left: 20px;
+  height: 275px;
+  width: 275px;
+}
+
+#muffinman {
+  padding-top: 5%;
+  display: grid;
+  grid-template: 500px 500px / 500px 500px 500px;
+}
+
+#muffinman img {
+  margin-left: 20px;
+  height: 275px;
+  width: 275px;
 }

@@ -1,5 +1,6 @@
 body {
-  background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-image: url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2286196/910/607/m2/fpnw/wm1/1606_bakery-1screen-.jpg?1487247061&s=b06689cf630f234f3d45f277aae1924b');
+  font-family: sans-serif;
 }
 
 ul {
@@ -7,18 +8,19 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: whitesmoke;
+
 }
 
 li {
   float: left;
 }
 
-li a {
+.try a {
   display: block;
   color: white;
   text-align: center;
-  padding: 42px 75px;
+  padding: 29px 60px;
   text-decoration: none;
   font-size: 25px;
 }
@@ -28,6 +30,7 @@ li a:hover {
 }
 
 nav img {
-  height: 130px;
-  width: 130px;
+  height: 85px;
+  width: 85px;
+  padding-top: 50px;
 }
