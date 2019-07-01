@@ -37,7 +37,7 @@ get "/events" do
 
   eventName = []
   eventDesc = []
-  eventData = []
+  eventDate = []
   eventTime = []
   eventImage = []
 
@@ -48,7 +48,14 @@ get "/events" do
     eventDate << event_api.dig(:start, :timezone)
     eventTime << event_api.dig(:start, :local)
     eventImage << event_api.dig(:logo, :original, :url)
+
   end
+
+  @event_name = eventName
+  @event_desc = eventDesc
+  @event_date = eventDate
+  @event_time = eventTime
+  @event_image = eventImage
 
 
   erb :events

@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 ul {
@@ -39,15 +40,40 @@ nav img {
 }
 
 h1 {
-  font-family: sans-serif;
+  color: #f5f5dc;
+  font-size: 100px;
+  font-family: Marker Felt, fantasy;
 }
 
-p {
-  font-family: sans-serif;
+h2 {
+  color: #f5f5dc;
+  font-size: 50px;
+  font-family: Marker Felt, fantasy;
 }
+
+
 
 .websites img {
   height: 25px;
   width: 25px;
   margin: 44px 10px;
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 13px;
+}
+
+.button:hover {
+  background-color: pink;
+}
+
+.secret {
+  margin-right: 700px;
 }

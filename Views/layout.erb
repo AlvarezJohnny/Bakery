@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Let's Get This Bread</title>
-    <% if request.path == "/" %>
+    <% if request.path == "/" || request.path == "/results" %>
       <link rel="stylesheet" href="main2.css">
     <% else %>
       <link rel="stylesheet" href="main.css">

@@ -1,5 +1,14 @@
-<p>Event Name:<%="#{@event_name}"%></p>
-<p>This is :<%="#{@event_desc}"%></p>
-<p>Starts at<%="#{@event_date}"%></p>
-<p>Where at?<%="#{@event_time}"%></p>
-<img src='<%="#{@event_image}"%>'>
+<h1>Check Out Some Local Events!</h1>
+<h2></h2>
+
+<div class="baking">
+
+<% for i in 0..9 do %>
+<p><%="#{@event_name[i]}"%></p>
+<p><%="#{@event_desc[i]}"%></p>
+<p><%="#{@event_date[i]}"%></p>
+<p><%="#{@event_time[i]}"%></p>
+<img class="show_me" src='<%="#{@event_image[i]}"%>'>
+
+<% end %>
+</div>
