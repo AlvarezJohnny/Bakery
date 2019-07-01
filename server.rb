@@ -1,5 +1,17 @@
 require "sinatra"
 require "httparty"
+require "./mailer.rb"
+require "action_mailer"
+
+def send_email(rec)
+  Newsletter.email(rec).deliver_now
+end
+
+get "/results" do
+  @email = params[:search]
+  send_email(@email)
+  erb :results
+end
 
 get "/" do
   erb :about
@@ -19,17 +31,23 @@ end
 
 get "/events" do
   @pub_key = 'A3VSYKHFVVD6KPRIT4VF'
-  event = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=baking&token=#{@pub_key}")
-  JSON.parse(event)
-  @events = event['events']
+  event = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=baking&token=#{@pub_key}", format: :plain)
+  event_hash = JSON.parse event, symbolize_names: true
+  events = event_hash.dig(:events)
 
-  @events.take(9).each do |i|
-    [i]['name']['text']
-    [i]['description']['text']
-    [i]['url']
-    [i]['start']['timezone']
-    [i]['start']['local']
-    [i]['logo']
+  eventName = []
+  eventDesc = []
+  eventData = []
+  eventTime = []
+  eventImage = []
+
+  1..9.times do |i|
+    event_api = events[i]
+    eventName << event_api.dig(:name, :text)
+    eventDesc << event_api.dig(:description, :text)
+    eventDate << event_api.dig(:start, :timezone)
+    eventTime << event_api.dig(:start, :local)
+    eventImage << event_api.dig(:logo, :original, :url)
   end
 
 

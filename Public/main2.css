@@ -1,6 +1,8 @@
 body {
-  background-image: url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2286196/910/607/m2/fpnw/wm1/1606_bakery-1screen-.jpg?1487247061&s=b06689cf630f234f3d45f277aae1924b');
+  background-image: url('https://i.pinimg.com/originals/21/20/34/212034a4eab9075633f9cbfdcac1543e.jpg');
   font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
@@ -8,19 +10,20 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: whitesmoke;
-
+  background-color: #333;
+  margin-top: -13px;
 }
 
 li {
   float: left;
+  height: 100px;
 }
 
 .try a {
   display: block;
   color: white;
   text-align: center;
-  padding: 29px 60px;
+  padding: 35px 60px;
   text-decoration: none;
   font-size: 25px;
 }
@@ -30,7 +33,21 @@ li a:hover {
 }
 
 nav img {
-  height: 85px;
-  width: 85px;
-  padding-top: 50px;
+  margin-top: -40px;
+  height: 125px;
+  width: 150px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.websites img {
+  height: 25px;
+  width: 25px;
+  margin: 44px 10px;
 }
